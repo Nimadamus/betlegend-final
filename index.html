@@ -7,85 +7,117 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       background: #0b0c10;
       color: white;
       font-family: Arial, sans-serif;
+      display: flex;
+    }
+    nav {
+      width: 200px;
+      background: #1c1f26;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    main {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
       text-align: center;
     }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    img {
-      max-width: 300px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-top: 40px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.2em;
-    }
-    li {
-      margin: 10px 0;
-    }
-    .affiliate {
-      margin-top: 40px;
-    }
-    .affiliate a {
-      background: #ffcc00;
-      color: black;
-      padding: 15px 30px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
+    th {
+      background: #222;
     }
     .record {
-      margin-top: 20px;
-      font-size: 1.1em;
-      color: #dddddd;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+    .logo {
+      max-width: 180px;
+      margin-bottom: 30px;
     }
   </style>
-  <!-- Google Analytics Placeholder -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
 </head>
 <body>
-  <div class="container">
-    <img src="betlegend-logo.png" alt="Betlegend Logo">
-    <h1>Betlegend Picks</h1>
-    <p>Smart bets. Sharp analysis. Legendary wins.</p>
 
-    <div class="record">
-      <strong>Record:</strong> 4-0 (+4.35 units) — Giants -1.5 (+140) Pending
-    </div>
+<nav>
+  <img src="betlegend-logo.png" alt="Betlegend Logo" class="logo">
+  <a href="#mlb">MLB</a>
+  <a href="#nba">NBA</a>
+  <a href="#nhl">NHL</a>
+</nav>
 
-    <h2>MLB Picks – May 18, 2025</h2>
-    <ul>
-      <li>Reds ML (+105)</li>
-      <li>Brewers -1.5 (+130)</li>
-      <li>Giants -1.5 (+140)</li>
-      <li>Astros ML (-125)</li>
-      <li>Braves ML (-120)</li>
-    </ul>
-
-    <div class="affiliate">
-      <a href="https://www.youwager.lv/join-now?affid=BABS123" target="_blank">Join & Bet Now</a>
-    </div>
+<main>
+  <h1>Betlegend Picks</h1>
+  <div class="record">
+    Total Record: 4-0 (+4.35 units)
   </div>
+
+  <section id="mlb">
+    <h2>MLB Picks – May 18</h2>
+    <h3>Sides</h3>
+    <table>
+      <tr><th>Pick</th><th>Odds</th><th>Result</th><th>Units</th></tr>
+      <tr><td>Reds ML</td><td>+105</td><td>Win</td><td>+1.05</td></tr>
+      <tr><td>Brewers -1.5</td><td>+130</td><td>Win</td><td>+1.30</td></tr>
+      <tr><td>Giants -1.5</td><td>+140</td><td>Pending</td><td>—</td></tr>
+      <tr><td>Astros ML</td><td>-125</td><td>Win</td><td>+1.00</td></tr>
+      <tr><td>Braves ML</td><td>-120</td><td>Win</td><td>+1.00</td></tr>
+    </table>
+  </section>
+
+  <section id="nba">
+    <h2>NBA Picks – May 18</h2>
+    <h3>Totals</h3>
+    <table>
+      <tr><th>Pick</th><th>Odds</th><th>Result</th><th>Units</th></tr>
+      <tr><td>Nuggets/Thunder Under 214</td><td>-110</td><td>Pending</td><td>—</td></tr>
+    </table>
+    <h3>Props</h3>
+    <table>
+      <tr><th>Pick</th><th>Odds</th><th>Result</th><th>Units</th></tr>
+      <tr><td>Aaron Wiggins Over 4.5 Points</td><td>-105</td><td>Pending</td><td>—</td></tr>
+    </table>
+  </section>
+
+  <section id="nhl">
+    <h2>NHL Picks – May 18</h2>
+    <h3>Sides</h3>
+    <table>
+      <tr><th>Pick</th><th>Odds</th><th>Result</th><th>Units</th></tr>
+      <tr><td>Panthers ML</td><td>-135</td><td>Pending</td><td>—</td></tr>
+    </table>
+    <h3>Props</h3>
+    <table>
+      <tr><th>Pick</th><th>Odds</th><th>Result</th><th>Units</th></tr>
+      <tr><td>Sam Reinhart Over 2.5 Shots</td><td>-110</td><td>Pending</td><td>—</td></tr>
+    </table>
+  </section>
+
+  <div class="affiliate">
+    <a href="https://www.youwager.lv/join-now?affid=BABS123" target="_blank">Join & Bet Now</a>
+  </div>
+</main>
+
 </body>
 </html>
